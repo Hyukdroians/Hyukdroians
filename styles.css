@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000000;
-    color: #000000;
+    color: #ffffff; /* 텍스트 색상 수정 */
 }
 
 header {
@@ -15,7 +15,7 @@ header {
 }
 
 h1 {
-    margin: -700;
+    margin: 0; /* margin 수정 */
     font-size: 3.1em;
     font-weight: 900;
 }
@@ -25,39 +25,46 @@ p {
 }
 
 main {
+    display: flex; /* flexbox 사용 */
+    flex-wrap: wrap; /* 섹션 줄 바꿈 */
+    justify-content: space-between; /* 섹션 간격 조정 */
     padding: 37px;
-    max-width: 416px;
+    max-width: 709px; /* 최대 너비 설정 */
     margin: auto;
 }
 
 .profile {
+    flex: 0 100%; /* 각 섹션의 폭 설정 */
+    margin: 10px; /* 섹션 간 간격 */
     background: #454545;
     color: white;
-    padding: 3px;
-    border-radius: 7px;
-    line-height: 166%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-weight: 792;
-}
-
-.profile-img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.skills,
-.contact {
-    text-align: center;
-    margin-top: 26px;
-    background: #454545;
-    color: white;
-    padding: 4px;
-    line-height: 200%;
-    font-weight: 308;
+    padding: 1px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 1.2
+
+}
+
+.skills {
+    flex: 0 0 30%; /* 각 섹션의 폭 설정 */
+    margin: 10px; /* 섹션 간 간격 */
+    background: #454545;
+    color: white;
+    padding: 21px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.contact {
+    flex: 0 0 52%; /* 각 섹션의 폭 설정 */
+    margin: 10px; /* 섹션 간 간격 */
+    background: #454545;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 ul {
@@ -66,9 +73,24 @@ ul {
 }
 
 a:link {
-    color: darkgray
+    color: darkgray;
 }
 
 a:visited {
-        color: darkgray
+    color: darkgray
+}
+a:hover {
+    color: #ffffff; /* 마우스 오버 시 흰색으로 변경 */
+    text-decoration: underline; /* 밑줄 추가 */
+}
+
+.projects {
+    flex: 0 0 56%; /* 기존 섹션과 같은 폭 유지 */
+    margin: 10px; /* 섹션 간 간격 */
+    background: #454545;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
