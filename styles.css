@@ -68,3 +68,7 @@ ul {
 a:link {
     color: darkgray
 }
+
+a:visited {
+        color: darkgray
+}
