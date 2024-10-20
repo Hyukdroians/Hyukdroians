@@ -1,42 +1,45 @@
 body {
-    font-family: 'Pretendard', sans-serif;
+    font-family: "Pretendard", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #000000;
     color: #000000;
 }
 
 header {
-    background-color: #007aff;
-    color: white;
+    background-color: #00356f;
+    color: #ffffff;
     text-align: center;
-    padding: 21px 0;
-    font-weight: 10
+    padding: 71px 0;
+    font-weight: 400;
 }
 
 h1 {
-    margin: 39;
-    font-size: 2.7em;
-    font-weight: 900
+    margin: -700;
+    font-size: 3.1em;
+    font-weight: 900;
 }
 
 p {
     font-size: 1em;
+    line-height: 2
 }
 
 main {
-    padding: 38px;
-    max-width: 836px;
+    padding: 37px;
+    max-width: 838px;
     margin: auto;
 }
 
 .profile {
-    background: #ffffff;
-    padding: 6px;
+    background: #454545;
+    color: white;
+    padding: 3px;
     border-radius: 7px;
+    line-height: 162%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-weight: 792
+    font-weight: 792;
 }
 
 .profile-img {
@@ -45,11 +48,15 @@ main {
     margin-bottom: 20px;
 }
 
-.skills, .contact {
+.skills,
+.contact {
     text-align: center;
-    margin-top: 43px;
-    background: white;
-    padding: 47px;
+    margin-top: 26px;
+    background: #454545;
+    color: white;
+    padding: 4px;
+    line-height: 210%;
+    font-weight: 308;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -58,4 +65,3 @@ ul {
     list-style-type: none;
     padding: 0;
 }
-
