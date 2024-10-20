@@ -22,7 +22,6 @@ h1 {
 
 p {
     font-size: 1em;
-    line-height: 2
 }
 
 main {
@@ -36,7 +35,7 @@ main {
     color: white;
     padding: 3px;
     border-radius: 7px;
-    line-height: 162%;
+    line-height: 166%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-weight: 792;
@@ -55,7 +54,7 @@ main {
     background: #454545;
     color: white;
     padding: 4px;
-    line-height: 210%;
+    line-height: 200%;
     font-weight: 308;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -64,4 +63,8 @@ main {
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+a:link {
+    color: darkgray
 }
