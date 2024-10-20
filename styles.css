@@ -1,0 +1,61 @@
+body {
+    font-family: 'Pretendard', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+header {
+    background-color: #007aff;
+    color: white;
+    text-align: center;
+    padding: 21px 0;
+    font-weight: 10
+}
+
+h1 {
+    margin: 39;
+    font-size: 2.7em;
+    font-weight: 900
+}
+
+p {
+    font-size: 1em;
+}
+
+main {
+    padding: 38px;
+    max-width: 836px;
+    margin: auto;
+}
+
+.profile {
+    background: #ffffff;
+    padding: 6px;
+    border-radius: 7px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: 792
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.skills, .contact {
+    text-align: center;
+    margin-top: 43px;
+    background: white;
+    padding: 47px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
