@@ -2,12 +2,12 @@ body {
     font-family: "Pretendard", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #ffffff;
     color: #ffffff; /* 텍스트 색상 수정 */
 }
 
 header {
-    background-color: #00356f;
+    background-color: #5aa9ff;
     color: #ffffff;
     text-align: center;
     padding: 71px 0;
@@ -22,6 +22,7 @@ h1 {
 
 p {
     font-size: 1em;
+  
 }
 
 main {
@@ -29,14 +30,14 @@ main {
     flex-wrap: wrap; /* 섹션 줄 바꿈 */
     justify-content: space-between; /* 섹션 간격 조정 */
     padding: 37px;
-    max-width: 709px; /* 최대 너비 설정 */
+    max-width: 458px; /* 최대 너비 설정 */
     margin: auto;
 }
 
 .profile {
     flex: 0 100%; /* 각 섹션의 폭 설정 */
     margin: 10px; /* 섹션 간 간격 */
-    background: #454545;
+    background: #8f8f8f;
     color: white;
     padding: 1px;
     border-radius: 10px;
@@ -47,19 +48,22 @@ main {
 }
 
 .skills {
+    height: fit-content;
     flex: 0 0 30%; /* 각 섹션의 폭 설정 */
     margin: 10px; /* 섹션 간 간격 */
-    background: #454545;
+    background: #8f8f8f;
     color: white;
     padding: 21px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    line-height: 150%;
 }
 .contact {
-    flex: 0 0 52%; /* 각 섹션의 폭 설정 */
+    flex: 0 0 43%; /* 각 섹션의 폭 설정 */
+    height: fit-content;
     margin: 10px; /* 섹션 간 간격 */
-    background: #454545;
+    background:#8f8f8f;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -73,11 +77,11 @@ ul {
 }
 
 a:link {
-    color: darkgray;
+    color: rgb(255, 255, 255);
 }
 
 a:visited {
-    color: darkgray
+    color: rgb(255, 255, 255)
 }
 a:hover {
     color: #ffffff; /* 마우스 오버 시 흰색으로 변경 */
@@ -85,11 +89,11 @@ a:hover {
 }
 
 .projects {
-    flex: 0 0 56%; /* 기존 섹션과 같은 폭 유지 */
+    flex: 0 0 30%; /* 기존 섹션과 같은 폭 유지 */
     margin: 10px; /* 섹션 간 간격 */
-    background: #454545;
+    background: #8f8f8f;
     color: white;
-    padding: 4px;
+    padding: 21px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
