@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-            <style>* {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -154,57 +151,3 @@ background-color: #f8f8f8
 .rotate span:nth-child(9) { animation-delay: 0.9s; }
 .rotate span:nth-child(10) { animation-delay: 1s; }
 .rotate span:nth-child(11) { animation-delay: 1.1s; }
-</style>
-        </head>
-        <body>
-            
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" prefetch="body" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Hyukdroians</title>
-
-
-    <div class="container">
-        <nav class="gnb">
-            <h2 class="rotate">
-            <span>H</span>
-            <span>y</span>
-            <span>u</span>
-            <span>k</span>
-            <span>d</span>
-            <span>r</span>
-            <span>o</span>
-            <span>i</span>
-            <span>a</span>
-            <span>n</span>
-            <span>s</span>
-            </h2>
-        </nav>
-        <div class="content-area">
-            <aside class="lnb">
-                <h2></h2>
-                <p>  </p>
-                <ul>
-                    <li><a href="#">Archives</a></li>
-                    <li><a href="#">Menu</a></li>
-                </ul>
-            </aside>
-            <main class="contents">
-                <h2>Archives</h2>
-                <p>shival.</p>
-            </main>
-        </div>
-    </div>
-    <footer class="footer">
-        <p>hyeokida827@proton.me / twitter @hy_ukie / instagram @hy.ukie</p>
-    </footer>
-
-
-
-            <script>// Write JavaScript here</script>
-        
-    
-</body>
