@@ -180,7 +180,7 @@ background-color: #f8f8f8
 
   .gnb {
     width: 101%; /* 모바일에서는 전체 너비로 설정 */
-    padding: 10px;
+    padding: 23px;
   }
 
   .content-area {
@@ -207,23 +207,26 @@ background-color: #f8f8f8
 }
     
 .rotate{
-    animation: scrollDown-mobile 10s linear infinite,changeWeight 4s ease-in-out infinite;
+    
+animation: scrollDown-mobile 10s linear infinite,changeWeight 4s ease-in-out infinite;
         transform-origin: left bottom; /* 회전 중심을 조정 */
     white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
     margin: 0; /* 여백 제거 */
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 999;
     letter-spacing: -0.13em;  
+    text-align: center
+    
     
     }
 
 @keyframes scrollDown-mobile {
     0% {
-        transform: translateX(-100%); /* 시작 위치 위쪽, 90도 회전 */
+        transform: translateX(0%); /* 시작 위치 위쪽, 90도 회전 */
     }
     
     25% {
-        transform: translateX(-50%); /* 시작 위치 위쪽, 90도 회전 */
+        transform: translateX(0%); /* 시작 위치 위쪽, 90도 회전 */
     }
     
     50% {
@@ -231,9 +234,9 @@ background-color: #f8f8f8
     }
     
     75% {
-        transform: translateX(50%); /* 시작 위치 위쪽, 90도 회전 */
+        transform: translateX(0%); /* 시작 위치 위쪽, 90도 회전 */
     }
     100% {
-        transform: translateX(100%); /* 끝 위치 아래쪽, 90도 회전 */
+        transform: translateX(0%); /* 끝 위치 아래쪽, 90도 회전 */
     }
 }
