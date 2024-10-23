@@ -77,18 +77,20 @@ background-color: #f8f8f8
     background-color: #333;
     color: white;
     text-align: center;
-    height: 40px; /* FOOTER 높이 증가 */
-    line-height: 40px; 
-    position: relative; 
-    margin-top: auto; 
+    height: 40px;
+    line-height: 40px;
+    position: fixed; /* 화면에 고정 */
+    bottom: 0; /* 하단에 위치 */
+    left: 0;
+    width: 100%; /* 화면 너비에 맞게 확장 */
     overflow: hidden;
     white-space: nowrap;
-    
 }
+
 .footer p {
     display: inline-block; /* 인라인 블록으로 설정 */
     white-space: nowrap; /* 줄 바꿈 방지 */
-    animation: marquee 20s linear infinite; /* 애니메이션 적용 */
+    animation: marquee 10s linear infinite; /* 애니메이션 적용 */
 }
 
 @keyframes marquee {
@@ -97,6 +99,15 @@ background-color: #f8f8f8
     }
     100% {
         transform: translateX(200%); /* 왼쪽으로 이동 */
+    }
+}
+
+@keyframes marquee-mobile {
+    0% {
+        transform: translateX(-100%); /* 오른쪽에서 시작 */
+    }
+    100% {
+        transform: translateX(100%); /* 왼쪽으로 이동 */
     }
 }
 
@@ -189,10 +200,14 @@ background-color: #f8f8f8
     font-size: 15px; /* 푸터 텍스트 크기 줄이기 */
   }
     
-   
+   .footer p {
+    display: inline-block; /* 인라인 블록으로 설정 */
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    animation: marquee-mobile 10s linear infinite; /* 애니메이션 적용 */
+}
     
 .rotate{
-    animation: scrollDown-mobile 30s linear infinite,changeWeight 4s ease-in-out infinite;
+    animation: scrollDown-mobile 10s linear infinite,changeWeight 4s ease-in-out infinite;
         transform-origin: left bottom; /* 회전 중심을 조정 */
     white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
     margin: 0; /* 여백 제거 */
@@ -204,11 +219,11 @@ background-color: #f8f8f8
 
 @keyframes scrollDown-mobile {
     0% {
-        transform: translateX(-300%); /* 시작 위치 위쪽, 90도 회전 */
+        transform: translateX(-100%); /* 시작 위치 위쪽, 90도 회전 */
     }
     
     25% {
-        transform: translateX(-150%); /* 시작 위치 위쪽, 90도 회전 */
+        transform: translateX(-50%); /* 시작 위치 위쪽, 90도 회전 */
     }
     
     50% {
@@ -216,9 +231,9 @@ background-color: #f8f8f8
     }
     
     75% {
-        transform: translateX(150%); /* 시작 위치 위쪽, 90도 회전 */
+        transform: translateX(50%); /* 시작 위치 위쪽, 90도 회전 */
     }
     100% {
-        transform: translateX(300%); /* 끝 위치 아래쪽, 90도 회전 */
+        transform: translateX(100%); /* 끝 위치 아래쪽, 90도 회전 */
     }
 }
