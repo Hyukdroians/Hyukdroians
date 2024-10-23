@@ -11,6 +11,8 @@ h5 {
 
 }
 
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -156,3 +158,67 @@ background-color: #f8f8f8
 .rotate span:nth-child(9) { animation-delay: 0.9s; }
 .rotate span:nth-child(10) { animation-delay: 1s; }
 .rotate span:nth-child(11) { animation-delay: 1.1s; }
+
+
+
+/* 모바일 화면에 맞춘 스타일 */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .gnb {
+    width: 101%; /* 모바일에서는 전체 너비로 설정 */
+    padding: 10px;
+  }
+
+  .content-area {
+    padding: 0.1px; /* 여백 줄이기 */
+  }
+
+  .contents {
+    padding: 20px;
+    font-size: 15px; /* 텍스트 크기 줄이기 */
+  }
+
+  h5 {
+    font-size: 50px; /* 헤더 크기 조정 */
+  }
+
+  .footer {
+    font-size: 15px; /* 푸터 텍스트 크기 줄이기 */
+  }
+    
+   
+    
+.rotate{
+    animation: scrollDown-mobile 30s linear infinite,changeWeight 4s ease-in-out infinite;
+        transform-origin: left bottom; /* 회전 중심을 조정 */
+    white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+    margin: 0; /* 여백 제거 */
+    font-size: 5rem;
+    font-weight: 999;
+    letter-spacing: -0.13em;  
+    
+    }
+
+@keyframes scrollDown-mobile {
+    0% {
+        transform: translateX(-300%); /* 시작 위치 위쪽, 90도 회전 */
+    }
+    
+    25% {
+        transform: translateX(-150%); /* 시작 위치 위쪽, 90도 회전 */
+    }
+    
+    50% {
+        transform: translateX(0%); /* 시작 위치 위쪽, 90도 회전 */
+    }
+    
+    75% {
+        transform: translateX(150%); /* 시작 위치 위쪽, 90도 회전 */
+    }
+    100% {
+        transform: translateX(300%); /* 끝 위치 아래쪽, 90도 회전 */
+    }
+}
