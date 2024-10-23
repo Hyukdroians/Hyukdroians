@@ -90,7 +90,7 @@ background-color: #f8f8f8
 .footer p {
     display: inline-block; /* 인라인 블록으로 설정 */
     white-space: nowrap; /* 줄 바꿈 방지 */
-    animation: marquee 10s linear infinite; /* 애니메이션 적용 */
+    animation: marquee 25s linear infinite; /* 애니메이션 적용 */
 }
 
 @keyframes marquee {
@@ -203,7 +203,7 @@ background-color: #f8f8f8
    .footer p {
     display: inline-block; /* 인라인 블록으로 설정 */
     white-space: nowrap; /* 줄 바꿈 방지 */
-    animation: marquee-mobile 20s linear infinite; /* 애니메이션 적용 */
+    animation: marquee-mobile 10s linear infinite; /* 애니메이션 적용 */
 }
     
 .rotate{
